@@ -1,0 +1,15 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="40" x2="1180" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#052340"/>
+      <stop offset="0.55" stop-color="#0F3356"/>
+      <stop offset="1" stop-color="#061625"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" rx="42" fill="url(#bg)"/>
+  <circle cx="300" cy="220" r="110" fill="#4FD1C5" opacity="0.2"/>
+  <circle cx="980" cy="500" r="180" fill="#61B8FF" opacity="0.12"/>
+  <path d="M120 520C280 450 420 420 640 420C860 420 1000 450 1160 520" stroke="#4FD1C5" stroke-opacity="0.3" stroke-width="18" stroke-linecap="round"/>
+  <text x="640" y="360" fill="#EAF7FF" font-family="Poppins, Arial, sans-serif" font-size="54" font-weight="700" text-anchor="middle">Oceanic Study Vibes</text>
+  <text x="640" y="420" fill="#A9D6EE" font-family="Poppins, Arial, sans-serif" font-size="24" text-anchor="middle">Video placeholder for the multimedia requirement</text>
+</svg>

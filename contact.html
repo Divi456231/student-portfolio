@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Akase Divine</title>
+    <meta name="description" content="Contact form with validation for name, email, phone, and message.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">A</span>
+                <span class="brand-text">Akase Divine</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="planner.html">Academic Planner</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section-pad">
+        <div class="container page-heading">
+            <p class="eyebrow">Contact</p>
+            <h1>You can reach out to me using the form below.</h1>
+        </div>
+
+        <section class="container contact-grid">
+            <form id="contactForm" class="contact-form info-card" novalidate>
+                <div class="field-group">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Your full name">
+                    <small class="error-message" data-error-for="name"></small>
+                </div>
+                <div class="field-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" placeholder="Your email address">
+                    <small class="error-message" data-error-for="email"></small>
+                </div>
+                <div class="field-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" placeholder="Your phone number" inputmode="numeric">
+                    <small class="error-message" data-error-for="phone"></small>
+                </div>
+                <div class="field-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+                    <small class="error-message" data-error-for="message"></small>
+                </div>
+                <button class="btn primary" type="submit">Send Message</button>
+                <p id="contactSuccess" class="success-message" aria-live="polite"></p>
+            </form>
+
+            <aside class="info-card contact-info">
+                <h2>Contact Details</h2>
+                <ul class="contact-list">
+                    <li><strong>Name:</strong> Akase Divine</li>
+                    <li><strong>Email:</strong> a.divine4336@miva.edu.ng</li>
+                    <li><strong>Phone:</strong> 08113224742</li>
+                </ul>
+                <p>
+                    Use the form to contact the student portfolio owner. Validation ensures all fields are
+                    completed correctly before submission.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Akase Divine.</p>
+            <p><a href="index.html">Back to home</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

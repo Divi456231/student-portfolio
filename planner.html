@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Study Planner | Akase Divine</title>
+    <meta name="description" content="Interactive cybersecurity study planner with add, complete, and delete task functionality.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="planner">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">A</span>
+                <span class="brand-text">Akase Divine</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="planner.html">Academic Planner</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section-pad">
+        <div class="container page-heading">
+            <p class="eyebrow">Cybersecurity Study Planner</p>
+            <h1>Plan tasks, track security revision, and keep study goals on track.</h1>
+        </div>
+
+        <section class="container planner-layout">
+            <article class="planner-card info-card">
+                <div class="planner-topline">
+                    <div>
+                        <h2>Study Tasks</h2>
+                        <p>Use the planner to manage assignments, security revision, web technologies, and deadlines.</p>
+                    </div>
+                    <div class="planner-stats" aria-live="polite">
+                        <div><strong id="taskTotal">0</strong><span>Total</span></div>
+                        <div><strong id="taskDone">0</strong><span>Done</span></div>
+                        <div><strong id="taskPending">0</strong><span>Pending</span></div>
+                    </div>
+                </div>
+
+                <form id="taskForm" class="task-form" autocomplete="off">
+                    <label class="sr-only" for="taskInput">Add a new task</label>
+                    <input id="taskInput" type="text" placeholder="e.g. Revise JavaScript functions" maxlength="120">
+                    <button class="btn primary" type="submit">Add Task</button>
+                </form>
+                <p id="taskMessage" class="form-hint" aria-live="polite"></p>
+
+                <ul id="taskList" class="task-list" aria-live="polite"></ul>
+            </article>
+
+            <aside class="info-card planner-note">
+                <h2>Productivity Tips</h2>
+                <ul class="bullet-list">
+                    <li>Break big assignments into smaller tasks.</li>
+                    <li>Complete the hardest task first.</li>
+                    <li>Review your cybersecurity checklist daily.</li>
+                    <li>Keep the planner updated after each security session.</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year"></span> Akase Divine.</p>
+            <p><a href="contact.html">Need help? Contact me</a></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
